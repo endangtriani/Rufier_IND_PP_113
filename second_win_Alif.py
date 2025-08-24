@@ -7,8 +7,8 @@ from PyQt5.QtWidgets import (
        QPushButton, QLabel, QListWidget, QLineEdit)
 
 
-from instruksi_Arkan import *
-from final_win_Arkan import *
+from instr_Alif import *
+from final_win_Alif import *
 
 
 class Experiment():
@@ -163,3 +163,4 @@ class TestWin(QWidget):
         self.btn_test1.clicked.connect(self.timer_test)
         self.btn_test2.clicked.connect(self.timer_sits)
         self.btn_test3.clicked.connect(self.timer_final)
+

@@ -1,4 +1,3 @@
-# write the code for the main application and the first screen here
 from PyQt5.QtCore import Qt, QTimer, QTime, QLocale
 from PyQt5.QtGui import QDoubleValidator, QIntValidator, QFont # checking the types of input values
 from PyQt5.QtWidgets import (
@@ -7,7 +6,7 @@ from PyQt5.QtWidgets import (
        QGroupBox, QRadioButton,
        QPushButton, QLabel, QListWidget, QLineEdit)
       
-from instruksi_Arkan import *
+from instr_Alif import *
 
 class FinalWin(QWidget):
     def __init__(self, exp):
