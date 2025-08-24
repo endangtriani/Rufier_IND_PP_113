@@ -5,8 +5,8 @@ from PyQt5.QtWidgets import (
        QGroupBox, QRadioButton,
        QPushButton, QLabel, QListWidget, QLineEdit)
 
-from instr import *
-from final_win import *
+from instr_faeyza import *
+from final_win_faeyza import *
 
 class Experiment():
    def __init__(self, age, test1, test2, test3):
@@ -84,19 +84,19 @@ class TestWin(QWidget):
         self.h_line.addLayout(self.r_line)       
         self.setLayout(self.h_line)
     
-def next_click(self):
+    def next_click(self):
         self.hide()
         self.exp = Experiment(int(self.line_age.text()), self.line_test1.text(), self.line_test2.text(), self.line_test2.text())
         self.fw = FinalWin(self.exp)
 
-def timer_test(self)
-    global time
-    time = QTime(0, 0, 15)
-    self.timer = QTimer()
-    self.timer.timeout.connect(self.timerEvent)
-    self.timer.start(1000)
+    def timer_test(self):
+        global time
+        time = QTime(0, 0, 15)
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.timerEvent)
+        self.timer.start(1000)
 
-def timer_sits(self):
+    def timer_sits(self):
         global time
         time = QTime(0, 0, 30)
         self.timer = QTimer()
@@ -109,7 +109,7 @@ def timer_sits(self):
         self.timer = QTimer()
         self.timer.timeout.connect(self.timer3Event)
         self.timer.start(1000)
-def timer1Event(self):
+    def timer1Event(self):
         global time
         time = time.addSecs(-1)
         self.text_timer.setText(time.toString("hh:mm:ss"))

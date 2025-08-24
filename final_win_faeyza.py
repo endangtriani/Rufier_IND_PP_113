@@ -1,5 +1,11 @@
 from PyQt5.QtCore import Qt, QTimer, QTime, QLocale
 from PyQt5.QtGui import QDoubleValidator, QIntValidator, QFont
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (
+       QApplication, QWidget,
+       QHBoxLayout, QVBoxLayout,
+       QGroupBox, QRadioButton,
+       QPushButton, QLabel, QListWidget, QLineEdit)
       
 from instr_faeyza import *
 
@@ -43,7 +49,7 @@ class FinalWin(QWidget):
                 return txt_res4
             else:
                 return txt_res5
-if self.exp.age == 9 or self.exp.age == 10:
+        if self.exp.age == 9 or self.exp.age == 10:
             if self.index >= 19.5:
                 return txt_res1
             elif self.index < 19.5 and self.index >= 15.5:
@@ -65,7 +71,7 @@ if self.exp.age == 9 or self.exp.age == 10:
                 return txt_res4
             else:
                 return txt_res5
-if self.exp.age == 13 or self.exp.age == 14:
+        if self.exp.age == 13 or self.exp.age == 14:
             if self.index >= 16.5:
                 return txt_res1
             elif self.index < 16.5 and self.index >= 12.5:
