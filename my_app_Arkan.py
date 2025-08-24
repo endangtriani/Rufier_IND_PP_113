@@ -13,9 +13,9 @@ from second_win_Arkan import *
 
      
 class MainWin(QWidget):
-   def _init_(self):
+   def __init__(self):
        ''' the window which the greeting is located in '''
-       super()._init_()
+       super().__init__()
 
 
        # sets what the window will look like (label, size, location)
@@ -69,6 +69,5 @@ def main():
    app = QApplication([])
    mw = MainWin()
    app.exec_()
-
 
 main()
